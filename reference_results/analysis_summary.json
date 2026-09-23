@@ -1,0 +1,345 @@
+{
+  "analysis_class": "proof_of_concept_simulation_not_decision_grade",
+  "analysis_unit": "one representative treated periodontal site",
+  "base_closure_mapping": "linear",
+  "closure_mapping_scenarios": [
+    "linear",
+    "logistic",
+    "probit",
+    "emax"
+  ],
+  "closure_markov_coupling_base": "initial_only",
+  "closure_markov_coupling_scenarios": [
+    "initial_only",
+    "transition_only",
+    "dual"
+  ],
+  "host_modulation_base_pathway": "none",
+  "host_modulation_base_qaly": 0.0,
+  "independent_pk_validation": "not performed",
+  "psa_draws": 5000,
+  "reference_case_psa_icer_ranges": [
+    {
+      "Arm": "SRP+Atridox",
+      "PSA draws": 5000,
+      "Draws with positive dQALY": 4904,
+      "P(dQALY <= 0)": 0.0192,
+      "dCost 2.5th": 194.01516997617506,
+      "dCost median": 269.6781389846435,
+      "dCost 97.5th": 364.73625700736727,
+      "dQALY 2.5th": 0.003283076756353732,
+      "dQALY median": 0.04923025179172136,
+      "dQALY 97.5th": 0.11308896942777008,
+      "ICER 2.5th (positive dQALY draws)": 1973.2209146896578,
+      "ICER median (positive dQALY draws)": 5455.627309749814,
+      "ICER 97.5th (positive dQALY draws)": 35076.18860443189
+    },
+    {
+      "Arm": "SRP+Periochip",
+      "PSA draws": 5000,
+      "Draws with positive dQALY": 5000,
+      "P(dQALY <= 0)": 0.0,
+      "dCost 2.5th": 185.87720053069788,
+      "dCost median": 254.82024782073836,
+      "dCost 97.5th": 342.09976501905834,
+      "dQALY 2.5th": 0.026589475893216453,
+      "dQALY median": 0.05874059477285343,
+      "dQALY 97.5th": 0.10689222016267647,
+      "ICER 2.5th (positive dQALY draws)": 2022.0984792478168,
+      "ICER median (positive dQALY draws)": 4392.350730849375,
+      "ICER 97.5th (positive dQALY draws)": 10788.751181587459
+    },
+    {
+      "Arm": "SRP+Arestin",
+      "PSA draws": 5000,
+      "Draws with positive dQALY": 5000,
+      "P(dQALY <= 0)": 0.0,
+      "dCost 2.5th": 222.01177719845242,
+      "dCost median": 302.8261312447323,
+      "dCost 97.5th": 400.82508127886206,
+      "dQALY 2.5th": 0.022661750757516686,
+      "dQALY median": 0.04648404489335789,
+      "dQALY 97.5th": 0.07588459507964504,
+      "ICER 2.5th (positive dQALY draws)": 3482.08594023701,
+      "ICER median (positive dQALY draws)": 6533.81606484043,
+      "ICER 97.5th (positive dQALY draws)": 14443.39342818531
+    }
+  ],
+  "reference_case_icer_conditioning": "ICER percentiles calculated among draws with positive incremental QALYs; P(dQALY <= 0) reported separately",
+  "evpi": 419.45053022215143,
+  "evpi_mcse": 9.475261314083655,
+  "evppi_estimation_method": "five-fold cross-fitted GAM with out-of-sample predictions",
+  "evppi_reporting_bound": "reported values constrained to [0, EVPI]",
+  "evppi_raw_cross_fitted": {
+    "Closure/efficacy (PPD WMD)": 419.8054225961678,
+    "Host-modulation QALY (disabled)": 0.0,
+    "Recurrence/retention": 0.31985661340877414,
+    "Costs": 0.0,
+    "Closure mapping (P0/kappa/ceiling)": 0.0
+  },
+  "evppi_reported": {
+    "Closure/efficacy (PPD WMD)": 419.45053022215143,
+    "Host-modulation QALY (disabled)": 0.0,
+    "Recurrence/retention": 0.31985661340877414,
+    "Costs": 0.0,
+    "Closure mapping (P0/kappa/ceiling)": 0.0
+  },
+  "base_probability_optimal": {
+    "SRP alone": 0.0,
+    "SRP+Atridox": 0.35,
+    "SRP+Periochip": 0.5432,
+    "SRP+Arestin": 0.1068
+  },
+  "mapping_probability_optimal": [
+    {
+      "Closure mapping": "linear",
+      "Strategy": "SRP alone",
+      "Probability optimal": 0.0,
+      "Monte Carlo SE": 0.0,
+      "Mean illustrative NMB": 665041.0729340347
+    },
+    {
+      "Closure mapping": "linear",
+      "Strategy": "SRP+Atridox",
+      "Probability optimal": 0.35,
+      "Monte Carlo SE": 0.00674536878161602,
+      "Mean illustrative NMB": 667373.1847522041
+    },
+    {
+      "Closure mapping": "linear",
+      "Strategy": "SRP+Periochip",
+      "Probability optimal": 0.5432,
+      "Monte Carlo SE": 0.007044625753012008,
+      "Mean illustrative NMB": 667836.7859437916
+    },
+    {
+      "Closure mapping": "linear",
+      "Strategy": "SRP+Arestin",
+      "Probability optimal": 0.1068,
+      "Monte Carlo SE": 0.004367923076245735,
+      "Mean illustrative NMB": 667094.6733775949
+    },
+    {
+      "Closure mapping": "logistic",
+      "Strategy": "SRP alone",
+      "Probability optimal": 0.0,
+      "Monte Carlo SE": 0.0,
+      "Mean illustrative NMB": 665041.0729340347
+    },
+    {
+      "Closure mapping": "logistic",
+      "Strategy": "SRP+Atridox",
+      "Probability optimal": 0.35,
+      "Monte Carlo SE": 0.00674536878161602,
+      "Mean illustrative NMB": 667430.1453761103
+    },
+    {
+      "Closure mapping": "logistic",
+      "Strategy": "SRP+Periochip",
+      "Probability optimal": 0.543,
+      "Monte Carlo SE": 0.0070448704743238545,
+      "Mean illustrative NMB": 667914.583020739
+    },
+    {
+      "Closure mapping": "logistic",
+      "Strategy": "SRP+Arestin",
+      "Probability optimal": 0.107,
+      "Monte Carlo SE": 0.00437152147426957,
+      "Mean illustrative NMB": 667174.3714843339
+    },
+    {
+      "Closure mapping": "probit",
+      "Strategy": "SRP alone",
+      "Probability optimal": 0.0,
+      "Monte Carlo SE": 0.0,
+      "Mean illustrative NMB": 665041.0729340347
+    },
+    {
+      "Closure mapping": "probit",
+      "Strategy": "SRP+Atridox",
+      "Probability optimal": 0.35,
+      "Monte Carlo SE": 0.00674536878161602,
+      "Mean illustrative NMB": 667414.7628321253
+    },
+    {
+      "Closure mapping": "probit",
+      "Strategy": "SRP+Periochip",
+      "Probability optimal": 0.5428,
+      "Monte Carlo SE": 0.007045114051596326,
+      "Mean illustrative NMB": 667894.2213729293
+    },
+    {
+      "Closure mapping": "probit",
+      "Strategy": "SRP+Arestin",
+      "Probability optimal": 0.1072,
+      "Monte Carlo SE": 0.004375115084200643,
+      "Mean illustrative NMB": 667155.5412879143
+    },
+    {
+      "Closure mapping": "emax",
+      "Strategy": "SRP alone",
+      "Probability optimal": 0.0,
+      "Monte Carlo SE": 0.0,
+      "Mean illustrative NMB": 665041.0729340347
+    },
+    {
+      "Closure mapping": "emax",
+      "Strategy": "SRP+Atridox",
+      "Probability optimal": 0.3494,
+      "Monte Carlo SE": 0.006742694416922659,
+      "Mean illustrative NMB": 666711.574825819
+    },
+    {
+      "Closure mapping": "emax",
+      "Strategy": "SRP+Periochip",
+      "Probability optimal": 0.5476,
+      "Monte Carlo SE": 0.007038952194751716,
+      "Mean illustrative NMB": 667038.909355848
+    },
+    {
+      "Closure mapping": "emax",
+      "Strategy": "SRP+Arestin",
+      "Probability optimal": 0.103,
+      "Monte Carlo SE": 0.004298627687995321,
+      "Mean illustrative NMB": 666597.0048963884
+    },
+    {
+      "Closure mapping": "equal-weight scenario mixture",
+      "Strategy": "SRP alone",
+      "Probability optimal": 0.0,
+      "Monte Carlo SE": 0.0,
+      "Mean illustrative NMB": 665041.0729340347
+    },
+    {
+      "Closure mapping": "equal-weight scenario mixture",
+      "Strategy": "SRP+Atridox",
+      "Probability optimal": 0.34985,
+      "Monte Carlo SE": 0.006741482405005847,
+      "Mean illustrative NMB": 667232.4169465647
+    },
+    {
+      "Closure mapping": "equal-weight scenario mixture",
+      "Strategy": "SRP+Periochip",
+      "Probability optimal": 0.54415,
+      "Monte Carlo SE": 0.007030827974598843,
+      "Mean illustrative NMB": 667671.124923327
+    },
+    {
+      "Closure mapping": "equal-weight scenario mixture",
+      "Strategy": "SRP+Arestin",
+      "Probability optimal": 0.106,
+      "Monte Carlo SE": 0.0043349231033159435,
+      "Mean illustrative NMB": 667005.397761558
+    }
+  ],
+  "mapping_mixture_mcse_method": "PSA-draw-cluster SE across correlated mappings",
+  "closure_coupling_sensitivity": [
+    {
+      "Mapping": "linear",
+      "Markov coupling": "initial_only",
+      "CHX PPD effect (mm)": 0.3,
+      "SRP closure": 0.33,
+      "Atridox closure": 0.4415,
+      "PerioChip closure": 0.405,
+      "Arestin closure": 0.4315,
+      "Optimal strategy at illustrative WTP": "SRP+Atridox",
+      "INMB PerioChip vs Atridox": -845.0849881856702,
+      "PerioChip ICER vs SRP": 7800.185234284856
+    },
+    {
+      "Mapping": "linear",
+      "Markov coupling": "initial_only",
+      "CHX PPD effect (mm)": 0.75,
+      "SRP closure": 0.33,
+      "Atridox closure": 0.4415,
+      "PerioChip closure": 0.5175000000000001,
+      "Arestin closure": 0.4315,
+      "Optimal strategy at illustrative WTP": "SRP+Periochip",
+      "INMB PerioChip vs Atridox": 1790.4509343045065,
+      "PerioChip ICER vs SRP": 2794.9719399771575
+    },
+    {
+      "Mapping": "linear",
+      "Markov coupling": "transition_only",
+      "CHX PPD effect (mm)": 0.3,
+      "SRP closure": 0.33,
+      "Atridox closure": 0.4415,
+      "PerioChip closure": 0.405,
+      "Arestin closure": 0.4315,
+      "Optimal strategy at illustrative WTP": "SRP+Atridox",
+      "INMB PerioChip vs Atridox": -1310.0924682376208,
+      "PerioChip ICER vs SRP": 5124.379569699879
+    },
+    {
+      "Mapping": "linear",
+      "Markov coupling": "transition_only",
+      "CHX PPD effect (mm)": 0.75,
+      "SRP closure": 0.33,
+      "Atridox closure": 0.4415,
+      "PerioChip closure": 0.5175000000000001,
+      "Arestin closure": 0.4315,
+      "Optimal strategy at illustrative WTP": "SRP+Periochip",
+      "INMB PerioChip vs Atridox": 2750.910668520257,
+      "PerioChip ICER vs SRP": 1899.512188725812
+    },
+    {
+      "Mapping": "linear",
+      "Markov coupling": "dual",
+      "CHX PPD effect (mm)": 0.3,
+      "SRP closure": 0.33,
+      "Atridox closure": 0.4415,
+      "PerioChip closure": 0.405,
+      "Arestin closure": 0.4315,
+      "Optimal strategy at illustrative WTP": "SRP+Atridox",
+      "INMB PerioChip vs Atridox": -2127.8463177903323,
+      "PerioChip ICER vs SRP": 2922.574071696117
+    },
+    {
+      "Mapping": "linear",
+      "Markov coupling": "dual",
+      "CHX PPD effect (mm)": 0.75,
+      "SRP closure": 0.33,
+      "Atridox closure": 0.4415,
+      "PerioChip closure": 0.5175000000000001,
+      "Arestin closure": 0.4315,
+      "Optimal strategy at illustrative WTP": "SRP+Periochip",
+      "INMB PerioChip vs Atridox": 4402.482142725959,
+      "PerioChip ICER vs SRP": 947.0466062267029
+    }
+  ],
+  "identifiability": [
+    {
+      "Product": "Atridox (DOX gel)",
+      "GCF anchors": 3,
+      "Estimated release parameters": 4,
+      "Residual-Jacobian rank": 3,
+      "Condition number": "6.72e+00",
+      "Near-optimal multistart solutions": 5,
+      "Maximum transformed-parameter span": "8.088",
+      "Conclusion": "not identifiable: observations <= estimated parameters",
+      "Independent validation": "not performed"
+    },
+    {
+      "Product": "PerioChip (CHX gluconate chip)",
+      "GCF anchors": 4,
+      "Estimated release parameters": 3,
+      "Residual-Jacobian rank": 3,
+      "Condition number": "6.36e+02",
+      "Near-optimal multistart solutions": 1,
+      "Maximum transformed-parameter span": "0.000",
+      "Conclusion": "locally identifiable, but precision remains weak because anchors are sparse",
+      "Independent validation": "not performed"
+    },
+    {
+      "Product": "Arestin (MINO microspheres)",
+      "GCF anchors": 2,
+      "Estimated release parameters": 0,
+      "Residual-Jacobian rank": 0,
+      "Condition number": "not estimable",
+      "Near-optimal multistart solutions": 0,
+      "Maximum transformed-parameter span": "not applicable",
+      "Conclusion": "not assessed: zero-order representation fixed from two label-summary anchors",
+      "Independent validation": "not performed"
+    }
+  ]
+}

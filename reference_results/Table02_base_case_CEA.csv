@@ -1,0 +1,5 @@
+Arm,Illustrative cost ($/site),QALY/site,Tooth-years/site,Illustrative dCost ($/site),dQALY/site,dTooth-years/site,Display-consistent ICER vs SRP ($/QALY),PSA ICER 2.5th–97.5th percentiles ($/QALY)*
+SRP alone,2405.0,13.366,13.622,0.0,0.0,0.0,-,-
+SRP+Atridox,2677.0,13.418,13.711,272.0,0.052,0.089,"5,231","1,973–35,076"
+SRP+Periochip,2648.0,13.453,13.771,243.0,0.087,0.149,"2,793","2,022–10,789"
+SRP+Arestin,2709.0,13.413,13.703,304.0,0.047,0.081,"6,468","3,482–14,443"
